@@ -1,0 +1,27 @@
+models:
+  - model: data/deepseek-coder-6.7b-instruct
+    parameters:
+      epsilon: 0.05
+      density: 0.95
+      weight: 0.5
+  - model: data/Artigenz-Coder-DS-6.7B
+    parameters:
+      epsilon: 0.05
+      density: 0.95
+      weight: 0.5
+  - model: data/OpenCodeInterpreter-DS-6.7B
+    parameters:
+      epsilon: 0.05
+      density: 0.95
+      weight: 0.5
+  - model: data/Magicoder-S-DS-6.7B
+    parameters:
+      epsilon: 0.05
+      density: 0.95
+      weight: 0.5
+merge_method: della
+base_model: data/deepseek-coder-6.7b-base
+parameters:
+  normalize: true
+  int8_mask: false
+dtype: bfloat16

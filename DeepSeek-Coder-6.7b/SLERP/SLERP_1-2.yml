@@ -1,0 +1,9 @@
+models:
+  - model: data/OpenCodeInterpreter-DS-6.7B
+    parameters:
+      t: 0.50
+merge_method: slerp
+base_model: data/Magicoder-S-DS-6.7B
+parameters:
+  t: 0.50
+dtype: bfloat16

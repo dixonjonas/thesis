@@ -1,0 +1,1 @@
+accelerate launch bigcode-evaluation-harness/main.py --model CodeQwen-BreadcrumbsTIES_1 --precision bf16 --tasks humaneval --max_length_generation 512 --temperature 0.2 --top_p 0.95 --do_sample True --n_samples 20 --batch_size 10 --allow_code_execution --save_generations --generation_only --save_generations_path CodeQwen-BreadcrumbsTIES_final.json

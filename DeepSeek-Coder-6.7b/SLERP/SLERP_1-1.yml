@@ -1,0 +1,9 @@
+models:
+  - model: data/deepseek-coder-6.7b-instruct
+    parameters:
+      t: 0.50
+merge_method: slerp
+base_model: data/Artigenz-Coder-DS-6.7B
+parameters:
+  t: 0.50
+dtype: bfloat16

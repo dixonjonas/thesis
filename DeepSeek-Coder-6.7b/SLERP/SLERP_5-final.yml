@@ -1,0 +1,9 @@
+models:
+  - model: data/DS-Coder-SLERP-5-1
+    parameters:
+      t: 0.5
+merge_method: slerp
+base_model: data/DS-Coder-SLERP-5-2
+parameters:
+  t: 0.5
+dtype: bfloat16
