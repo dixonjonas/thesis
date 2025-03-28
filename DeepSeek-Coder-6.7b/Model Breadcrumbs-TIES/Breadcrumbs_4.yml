@@ -20,7 +20,7 @@ models:
       density: 0.84
       weight: 0.5
 merge_method: breadcrumbs_ties
-base_model: data/CodeQwen1.5-7B
+base_model: data/deepseek-coder-6.7b-base
 parameters:
   normalize: true
   int8_mask: false
