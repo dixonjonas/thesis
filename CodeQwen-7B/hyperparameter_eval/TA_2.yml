@@ -1,0 +1,13 @@
+models:
+  - model: data/Nxcode-CQ-7B-orpo
+    parameters:
+      weight: 0.35
+  - model: data/CodeQwen1.5-7B-Chat
+    parameters:
+      weight: 0.65
+merge_method: task_arithmetic
+base_model: data/CodeQwen1.5-7B
+parameters:
+  normalize: true
+  int8_mask: false
+dtype: bfloat16
