@@ -1,0 +1,15 @@
+models:
+  - model: data/Nxcode-CQ-7B-orpo
+    parameters:
+      density: 0.9
+      weight: 0.5
+  - model: data/CodeQwen1.5-7B-Chat
+    parameters:
+      density: 0.9
+      weight: 0.5
+merge_method: ties
+base_model: data/CodeQwen1.5-7B
+parameters:
+  normalize: true
+  int8_mask: false
+dtype: bfloat16
