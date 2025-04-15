@@ -1,0 +1,27 @@
+models:
+  - model: data/deepseek-coder-6.7b-instruct
+    parameters:
+      density: 0.5
+      weight: 0.5
+      select_topk: 0.85
+  - model: data/Artigenz-Coder-DS-6.7B
+    parameters:
+      density: 0.5
+      weight: 0.5
+      select_topk: 0.85
+  - model: data/OpenCodeInterpreter-DS-6.7B
+    parameters:
+      density: 0.5
+      weight: 0.5
+      select_topk: 0.85
+  - model: data/Magicoder-S-DS-6.7B
+    parameters:
+      density: 0.5
+      weight: 0.5
+      select_topk: 0.85
+merge_method: sce
+base_model: data/deepseek-coder-6.7b-base
+parameters:
+  normalize: true
+  int8_mask: false
+dtype: bfloat16
