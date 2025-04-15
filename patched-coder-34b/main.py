@@ -273,10 +273,12 @@ def main():
             model_kwargs["load_in_8bit"] = args.load_in_8bit
             model_kwargs["device_map"] = {"": accelerator.process_index}
         elif args.load_in_4bit:
-            print("Loading model in 4bit")
+            print("Loading model in 4bit (nf4)")
             model_kwargs["load_in_4bit"] = args.load_in_4bit
-            model_kwargs["torch_dtype"] = torch.float16
-            model_kwargs["bnb_4bit_compute_dtype"] = torch.float16            
+            model_kwargs["torch_dtype"] = torch.float16  # you could change this to bfloat16 too
+            model_kwargs["bnb_4bit_compute_dtype"] = torch.float16  # kept float16
+            model_kwargs["bnb_4bit_use_double_quant"] = True         # manually add this
+            model_kwargs["bnb_4bit_quant_type"] = "nf4"              # manually add this
             model_kwargs["device_map"] = {"": accelerator.process_index}
         else:
             print(f"Loading model in {args.precision}")
