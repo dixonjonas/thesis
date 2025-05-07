@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mergekit-yaml data/thesis/CodeLlama-34b/SOUP.yml data/CodeLlama-34b-SOUP --cuda --low-cpu-memory
+mergekit-yaml /mnt/data/thesis/CodeLlama-34b/SOUP.yml /mnt/data/CodeLlama-34b-SOUP --cuda --low-cpu-memory
