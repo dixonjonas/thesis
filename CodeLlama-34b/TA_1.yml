@@ -1,0 +1,25 @@
+models:
+  - model: data/CodeLlama-34b-Instruct-hf
+    parameters:
+      weight: 0.5
+  - model: data/CodeLlama-34b-Python-hf
+    parameters:
+      weight: 0.5
+  - model: data/Phind-CodeLlama-34B-Python-v1
+    parameters:
+      weight: 0.5
+  - model: data/Phind-CodeLlama-34B-v2
+    parameters:
+      weight: 0.5
+  - model: data/WizardCoder-Python-34B-V1.0
+    parameters:
+      weight: 0.5
+  - model: data/patched-coder-34b
+    parameters:
+      weight: 0.5
+merge_method: task_arithmetic
+base_model: data/CodeLlama-34b-hf
+parameters:
+  normalize: true
+  int8_mask: false
+dtype: bfloat16
