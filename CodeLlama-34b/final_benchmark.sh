@@ -1,0 +1,6 @@
+#!/bin/bash
+
+accelerate launch bigcode-evaluation-harness/main.py --model CodeLlama-34b-SOUP --load_in_8bit --tasks multiple-java --max_length_generation 900 --temperature 0.2 --top_p 0.95 --do_sample True --n_samples 20 --batch_size 20 --allow_code_execution --save_generations --generation_only --save_generations_path CodeLlama-34b-SOUP-final.json
+accelerate launch bigcode-evaluation-harness/main.py --model CodeLlama-34b-SOUP --load_in_8bit --tasks multiple-cpp --max_length_generation 900 --temperature 0.2 --top_p 0.95 --do_sample True --n_samples 20 --batch_size 20 --allow_code_execution --save_generations --generation_only --save_generations_path CodeLlama-34b-SOUP-final.json
+accelerate launch bigcode-evaluation-harness/main.py --model CodeLlama-34b-TA --load_in_8bit --tasks multiple-java --max_length_generation 900 --temperature 0.2 --top_p 0.95 --do_sample True --n_samples 20 --batch_size 20 --allow_code_execution --save_generations --generation_only --save_generations_path CodeLlama-34b-TA-final.json
+accelerate launch bigcode-evaluation-harness/main.py --model CodeLlama-34b-TA --load_in_8bit --tasks multiple-cpp --max_length_generation 900 --temperature 0.2 --top_p 0.95 --do_sample True --n_samples 20 --batch_size 20 --allow_code_execution --save_generations --generation_only --save_generations_path CodeLlama-34b-TA-final.json
