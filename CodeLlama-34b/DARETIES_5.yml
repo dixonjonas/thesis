@@ -1,0 +1,31 @@
+models:
+  - model: data/CodeLlama-34b-Instruct-hf
+    parameters:
+      density: 0.95
+      weight: 0.5
+  - model: data/CodeLlama-34b-Python-hf
+    parameters:
+      density: 0.95
+      weight: 0.5
+  - model: data/Phind-CodeLlama-34B-Python-v1
+    parameters:
+      density: 0.95
+      weight: 0.5
+  - model: data/Phind-CodeLlama-34B-v2
+    parameters:
+      density: 0.95
+      weight: 0.5
+  - model: data/WizardCoder-Python-34B-V1.0
+    parameters:
+      density: 0.95
+      weight: 0.5
+  - model: data/patched-coder-34b
+    parameters:
+      density: 0.95
+      weight: 0.5
+merge_method: dare_ties
+base_model: data/CodeLlama-34b-hf
+parameters:
+  normalize: true
+  int8_mask: false
+dtype: bfloat16
