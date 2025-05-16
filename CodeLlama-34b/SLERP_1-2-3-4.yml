@@ -1,0 +1,9 @@
+models:
+  - model: data/SLERP_1-2
+    parameters:
+      t: 0.50
+merge_method: slerp
+base_model: data/SLERP_3-4
+parameters:
+  t: 0.50
+dtype: bfloat16

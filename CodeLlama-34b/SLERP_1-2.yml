@@ -1,0 +1,9 @@
+models:
+  - model: data/CodeLlama-34b-Instruct-hf
+    parameters:
+      t: 0.50
+merge_method: slerp
+base_model: data/CodeLlama-34b-Python-hf
+parameters:
+  t: 0.50
+dtype: bfloat16

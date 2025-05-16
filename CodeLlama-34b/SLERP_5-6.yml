@@ -1,0 +1,9 @@
+models:
+  - model: data/WizardCoder-Python-34B-V1.0
+    parameters:
+      t: 0.50
+merge_method: slerp
+base_model: data/patched-coder-34b
+parameters:
+  t: 0.50
+dtype: bfloat16

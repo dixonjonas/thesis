@@ -1,0 +1,9 @@
+models:
+  - model: data/Phind-CodeLlama-34B-Python-v1
+    parameters:
+      t: 0.50
+merge_method: slerp
+base_model: data/Phind-CodeLlama-34B-v2
+parameters:
+  t: 0.50
+dtype: bfloat16
