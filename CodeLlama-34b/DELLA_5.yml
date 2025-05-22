@@ -1,36 +1,36 @@
 models:
-  - model: /mnt/aiqu_data/CodeLlama-34b-Instruct-hf
+  - model: /mnt/data/CodeLlama-34b-Instruct-hf
     parameters:
       epsilon: 0.05
       density: 0.95
       weight: 0.5
-  - model: /mnt/aiqu_data/CodeLlama-34b-Python-hf
+  - model: /mnt/data/CodeLlama-34b-Python-hf
     parameters:
       epsilon: 0.05
       density: 0.95
       weight: 0.5
-  - model: /mnt/aiqu_data/Phind-CodeLlama-34B-Python-v1
+  - model: /mnt/data/Phind-CodeLlama-34B-Python-v1
     parameters:
       epsilon: 0.05
       density: 0.95
       weight: 0.5
-  - model: /mnt/aiqu_data/Phind-CodeLlama-34B-v2
+  - model: /mnt/data/Phind-CodeLlama-34B-v2
     parameters:
       epsilon: 0.05
       density: 0.95
       weight: 0.5
-  - model: /mnt/aiqu_data/WizardCoder-Python-34B-V1.0
+  - model: /mnt/data/WizardCoder-Python-34B-V1.0
     parameters:
       epsilon: 0.05
       density: 0.95
       weight: 0.5
-  - model: /mnt/aiqu_data/patched-coder-34b
+  - model: /mnt/data/patched-coder-34b
     parameters:
       epsilon: 0.05
       density: 0.95
       weight: 0.5
 merge_method: della
-base_model: /mnt/aiqu_data/CodeLlama-34b-hf
+base_model: /mnt/data/CodeLlama-34b-hf
 parameters:
   normalize: true
   int8_mask: false
